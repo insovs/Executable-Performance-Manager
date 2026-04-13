@@ -1,3 +1,5 @@
+<div align="center">
+
 <img width="860" height="391" alt="ExecutablePerformanceManager" src="https://github.com/user-attachments/assets/db6562ba-9507-4083-8f9f-afbe11923d30" />
 
 A PowerShell GUI to apply system-level Windows optimizations — CPU priority, network QoS,
@@ -13,6 +15,10 @@ All in one place. No manual registry editing. No third-party dependencies.
 
 ---
 
+<details>
+<summary><b>📸 Preview Screenshots</b></summary>
+<br>
+
 <table>
 <tr>
 <td align="center" width="50%">
@@ -27,6 +33,8 @@ All in one place. No manual registry editing. No third-party dependencies.
 </td>
 </tr>
 </table>
+
+</details>
 
 ---
 
