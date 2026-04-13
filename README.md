@@ -1,4 +1,6 @@
 <div align="center">
+<img width="1343" height="617" alt="Game optimizer tool" src="https://github.com/user-attachments/assets/dfa63664-1e5b-4a08-9131-d3af5e18bc5d" />
+
 
 <img width="860" height="391" alt="ExecutablePerformanceManager" src="https://github.com/user-attachments/assets/db6562ba-9507-4083-8f9f-afbe11923d30" />
 
