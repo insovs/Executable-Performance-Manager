@@ -52,18 +52,16 @@ All in one place. No manual registry editing. No third-party dependencies.
 
 ---
 
-### Requirements
+## 📥 Usage
 
-- Windows 10 / 11
-- PowerShell 5.1 or later
+Download `ExecutablePerformanceManager.ps1`, then **right-click** it → **Run with PowerShell**.
 
-### Run
-
-```powershell
-# Right-click → Run with PowerShell
-```
-
-> The script automatically detects if it is not running as administrator and relaunches itself elevated.
+> [!CAUTION]
+> If PowerShell scripts are blocked on your system, enable execution first:
+> ```powershell
+> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+> ```
+> Or use **[EnablePowerShellScript](https://github.com/insovs/EnablePowerShellScript)** for a one-click solution.
 
 ---
 
@@ -89,7 +87,6 @@ All changes are **non-destructive** and can be removed from within the app using
 ## ⚠️ Notes
 
 - **Run As Admin**: some apps may refuse to launch when this flag is set — remove the rule if that happens.
-- **FSO (Fullscreen Optimizations)**: system-wide disable writes to `GameConfigStore`. Per-app disable creates a child key under `GameConfigStore\Children` with a unique GUID and the executable path.
 - All registry operations are reversible. No system files are modified.
 
 ---
@@ -97,12 +94,6 @@ All changes are **non-destructive** and can be removed from within the app using
 ## 🤝 Contributing
 
 Pull requests are welcome. If you find a bug or want to suggest a new optimization module, feel free to open an issue.
-
----
-
-## 👤 Author
-
-**insovs** — [github.com/insovs](https://github.com/insovs)
 
 ---
 
