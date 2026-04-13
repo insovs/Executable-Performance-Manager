@@ -42,13 +42,13 @@ All in one place. No manual registry editing. No third-party dependencies.
 
 | Module | What it does |
 |---|---|
-| 🧠 **CPU Priority** | Sets `CpuPriorityClass=3` (High) and `IoPriority=3` (High) via IFEO. Windows schedules the process with elevated CPU and disk access priority at every launch, ensuring system resources are prioritized for your executable. |
-| 🌐 **QoS Network** | Assigns DSCP 46 (Expedited Forwarding) to the selected app via Windows QoS policy. Your router processes its packets first, drastically reducing ping and jitter. |
-| 🎮 **GPU Preference** | Forces `GpuPreference=2` (High Performance / discrete GPU) for the selected executable. Useful on laptops with hybrid GPU setups (Intel + NVIDIA). |
-| 🛡️ **Run As Admin** | Configures an app to always launch with administrator privileges via `AppCompatFlags` + IFEO — ensuring better compatibility and resource access for the executable. |
-| 🔥 **Firewall** | Creates explicit Inbound + Outbound Allow rules in Windows Firewall for the selected executable, preventing connection blocks and reducing packet loss. |
-| 🛡️ **Defender** | Adds the game or app folder to Windows Defender's exclusion list, preventing real-time background scans from causing stutter or frame drops during gameplay. |
-| 🖥️ **Fullscreen Optimization** | Disables Windows Fullscreen Optimizations (FSO) system-wide or per-app. Forces true exclusive fullscreen for lower input latency and better frame pacing. |
+| **CPU Priority** | Sets `CpuPriorityClass=3` (High) and `IoPriority=3` (High) via IFEO. Windows schedules the process with elevated CPU and disk access priority at every launch, ensuring system resources are prioritized for your executable. |
+| **QoS Network** | Assigns DSCP 46 (Expedited Forwarding) to the selected app via Windows QoS policy. Your router processes its packets first, drastically reducing ping and jitter. |
+| **GPU Preference** | Forces `GpuPreference=2` (High Performance / discrete GPU) for the selected executable. Useful on laptops with hybrid GPU setups (Intel + NVIDIA). |
+| **Run As Admin** | Configures an app to always launch with administrator privileges via `AppCompatFlags` + IFEO — ensuring better compatibility and resource access for the executable. |
+| **Firewall** | Creates explicit Inbound + Outbound Allow rules in Windows Firewall for the selected executable, preventing connection blocks and reducing packet loss. |
+| **Defender** | Adds the game or app folder to Windows Defender's exclusion list, preventing real-time background scans from causing stutter or frame drops during gameplay. |
+| **Fullscreen Optimization** | Disables Windows Fullscreen Optimizations (FSO) system-wide or per-app. Forces true exclusive fullscreen for lower input latency and better frame pacing. |
 
 ---
 
