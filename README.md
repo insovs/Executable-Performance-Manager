@@ -6,7 +6,7 @@
 [![Discord](https://img.shields.io/badge/Support-Discord-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/fayeECjdtb)
 [![Preview](https://img.shields.io/badge/Video-Preview-FF0000?logo=youtube&logoColor=white)](https://youtu.be/q63XYpYXOiQ)
 
-A lightweight PowerShell/WPF tool that applies Windows performance tweaks to any executable in a few clicks — no bloatware, no drivers, no third-party dependencies.
+A lightweight PowerShell/WPF tool that applies Windows performance tweaks to any executable in a few clicks.
 
 </div>
 
