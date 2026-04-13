@@ -6,6 +6,8 @@
 [![Discord](https://img.shields.io/badge/Support-Discord-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/fayeECjdtb)
 [![Preview](https://img.shields.io/badge/Video-Preview-FF0000?logo=youtube&logoColor=white)](https://youtu.be/q63XYpYXOiQ)
 
+A lightweight PowerShell/WPF tool that applies Windows performance tweaks to any executable in a few clicks — no bloatware, no drivers, no third-party dependencies.
+
 </div>
 
 ---
@@ -35,15 +37,15 @@
 
 ## ✨ Features
 
-| Module | What it does |
+| Feature | What it does |
 |---|---|
-| **CPU Priority** | Sets `CpuPriorityClass=3` (High) and `IoPriority=3` (High) via IFEO. Windows schedules the process with elevated CPU and disk access priority at every launch, ensuring system resources are prioritized for your executable. |
-| **QoS Network** | Assigns DSCP 46 (Expedited Forwarding) to the selected app via Windows QoS policy. Your router processes its packets first, drastically reducing ping and jitter. |
-| **GPU Preference** | Forces `GpuPreference=2` (High Performance / discrete GPU) for the selected executable. Useful on laptops with hybrid GPU setups (Intel + NVIDIA). |
-| **Run As Admin** | Configures an app to always launch with administrator privileges via `AppCompatFlags` + IFEO — ensuring better compatibility and resource access for the executable. |
-| **Firewall** | Creates explicit Inbound + Outbound Allow rules in Windows Firewall for the selected executable, preventing connection blocks and reducing packet loss. |
-| **Defender** | Adds the game or app folder to Windows Defender's exclusion list, preventing real-time background scans from causing stutter or frame drops during gameplay. |
-| **Fullscreen Optimization** | Disables Windows Fullscreen Optimizations (FSO) system-wide or per-app. Forces true exclusive fullscreen for lower input latency and better frame pacing. |
+| **CPU Priority** | Elevates the process to **High** CPU and I/O priority via IFEO (`PerfOptions`). Applied automatically at every launch — no manual Task Manager step needed. Windows will consistently favor the executable for CPU time and disk access over background processes. |
+| **QoS Network** | Tags outgoing packets with **DSCP 46** (Expedited Forwarding) via Windows QoS policy. Compatible routers process those packets ahead of regular traffic, reducing ping spikes and jitter. Most effective on home networks where the PC is the bottleneck. Note: ISPs typically strip DSCP tags on WAN traffic, so impact is limited to your local network. |
+| **GPU Preference** | Forces the executable to run on the **discrete GPU** (`GpuPreference=2`) instead of letting Windows decide. Essential on hybrid laptops (Intel iGPU + NVIDIA/AMD dGPU) where the wrong GPU is silently selected, causing lower framerates and reduced VRAM availability. |
+| **Run As Admin** | Makes the executable always request **administrator privileges** at launch via `AppCompatFlags` + IFEO — without needing to right-click every time. Useful for apps that require elevated access to function correctly or that fail silently without it. |
+| **Firewall** | Creates explicit **Inbound + Outbound Allow** rules in Windows Firewall for the executable. Prevents Windows from silently blocking or throttling connections, which can cause rubber-banding, lobby timeouts, or failed multiplayer sessions. |
+| **Defender** | Adds the app's folder to **Windows Defender's exclusion list**, stopping real-time scans from interrupting the process mid-session. Eliminates a common source of micro-stutters and frame time spikes that are difficult to diagnose otherwise. |
+| **Fullscreen Optimization** | Disables **Windows Fullscreen Optimizations (FSO)** globally or per executable. Restores true exclusive fullscreen mode, reducing input latency and improving frame pacing by giving the app direct control over display output — bypassing the DWM compositor. |
 
 ---
 
@@ -56,13 +58,14 @@ Download `ExecutablePerformanceManager.ps1`, then **right-click** it → **Run w
 > ```powershell
 > Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 > ```
+> `RemoteSigned` is sufficient for local scripts — `Unrestricted` is not required.
 > Or use **[EnablePowerShellScript](https://github.com/insovs/EnablePowerShellScript)** for a one-click solution.
 
 ---
 
 ## 🔧 How it works
 
-All settings are written directly to the Windows registry or managed via built-in PowerShell cmdlets:
+All changes target either the Windows registry or native PowerShell cmdlets — nothing is patched, injected, or dependent on third-party tools.
 
 | Feature | Registry / API used |
 |---|---|
@@ -75,13 +78,14 @@ All settings are written directly to the Windows registry or managed via built-i
 | Fullscreen — system-wide | `HKCU:\System\GameConfigStore` |
 | Fullscreen — per-app | `HKCU:\System\GameConfigStore\Children\<GUID>` |
 
-All changes are **non-destructive** and can be removed from within the app using the **Delete selected** button on each page.
+All changes are **non-destructive** and fully reversible from within the app using the **Delete selected** button on each page. No system files are modified.
 
 ---
 
 ## ⚠️ Notes
 
 - **Run As Admin**: some apps may refuse to launch when this flag is set — remove the rule if that happens.
+- **QoS Network**: DSCP tags are generally stripped by ISPs at the WAN level. The effect is limited to your local network and router.
 - All registry operations are reversible. No system files are modified.
 
 ---
@@ -95,5 +99,3 @@ Pull requests are welcome. If you find a bug or want to suggest a new optimizati
 <div align="center">
 <sub>Built with PowerShell + WPF · No external dependencies · 100% native Windows APIs</sub>
 </div>
-
----
