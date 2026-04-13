@@ -85,8 +85,6 @@ All changes are **non-destructive** and fully reversible from within the app usi
 ## ⚠️ Notes
 
 - **Run As Admin**: some apps may refuse to launch when this flag is set — remove the rule if that happens.
-- **QoS Network**: DSCP tags are generally stripped by ISPs at the WAN level. The effect is limited to your local network and router.
-- All registry operations are reversible. No system files are modified.
 
 ---
 
