@@ -2,16 +2,16 @@
 
 <img width="860" height="391" alt="ExecutablePerformanceManager" src="https://github.com/user-attachments/assets/db6562ba-9507-4083-8f9f-afbe11923d30" />
 
-A PowerShell GUI to apply system-level Windows optimizations — CPU priority, network QoS,
-Firewall rules, Defender exclusions, GPU preference, and Fullscreen tweaks.
-All in one place. No manual registry editing. No third-party dependencies.
-
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-blue?logo=powershell)
 ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey?logo=windows)
 [![Discord](https://img.shields.io/badge/Support-Discord-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/fayeECjdtb)
 [![Preview](https://img.shields.io/badge/Video-Preview-FF0000?logo=youtube&logoColor=white)](https://youtu.be/q63XYpYXOiQ)
 
 </div>
+
+A PowerShell GUI to apply system-level Windows optimizations — CPU priority, network QoS,
+Firewall rules, Defender exclusions, GPU preference, and Fullscreen tweaks.
+All in one place. No manual registry editing. No third-party dependencies.
 
 ---
 
