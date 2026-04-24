@@ -25,7 +25,7 @@ A lightweight PowerShell/WPF tool that **applies Windows performance tweaks to a
 <sub><b>Splash Screen</b> — Choose a module and get started instantly.</sub>
 </td>
 <td align="center" width="50%">
-<img width="489" height="533" alt="Main Window" src="https://github.com/user-attachments/assets/616b7091-f9f8-4a02-8ec4-111e6332c5a5" />
+ <img width="565" height="669" alt="image" src="https://github.com/user-attachments/assets/59cf7a79-cd58-43b8-9e73-da7400f599cf" />
 <br/><br/>
 <sub><b>Main Window</b> — Manage your rules, add apps, and track changes in real time.</sub>
 </td>
