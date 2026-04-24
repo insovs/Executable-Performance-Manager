@@ -20,7 +20,7 @@ A lightweight PowerShell/WPF tool that **applies Windows performance tweaks to a
 <table>
 <tr>
 <td align="center" width="50%">
-<img width="531" height="570" alt="Splash Screen" src="https://github.com/user-attachments/assets/82179b9d-c8cd-4fde-852f-8c8e6afb454e" />
+ <img width="529" height="633" alt="image" src="https://github.com/user-attachments/assets/823f3560-8a56-4585-9e10-4c95d66e0b77" />
 <br/><br/>
 <sub><b>Splash Screen</b> — Choose a module and get started instantly.</sub>
 </td>
