@@ -1,5 +1,5 @@
 <div align="center">
-<img width="1343" height="617" alt="Game optimizer tool" src="https://github.com/user-attachments/assets/dfa63664-1e5b-4a08-9131-d3af5e18bc5d" />
+<img width="1983" height="793" alt="ExectuableManagerBanner" src="https://github.com/user-attachments/assets/64fd96a0-49cc-4bef-98c7-4c0739cfb7be" />
 
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-blue?logo=powershell)
 [![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D4?style=flat-square&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
