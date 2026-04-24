@@ -14,7 +14,7 @@ A lightweight PowerShell/WPF tool that **applies Windows performance tweaks to a
 ---
 
 <details>
-<summary><b>📸 Preview Screenshots</b></summary>
+<summary><b>👁️ Show Preview Tool</b></summary>
 <br>
 
 <table>
