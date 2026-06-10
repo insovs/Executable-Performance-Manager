@@ -27,17 +27,19 @@ A lightweight PowerShell/WPF tool that **applies Windows performance tweaks to a
 
 ---
 
-## 📥 Usage
+## 📥 Installation / Usage
 
-Download `ExecutablePerformanceManager.ps1`, then **right-click** it → **Run with PowerShell**.
+### Run the command below in PowerShell console:
+
+```ps1
+iwr "https://raw.githubusercontent.com/insovs/Executable-Performance-Manager/main/ExecutablePerformanceManager.ps1" -OutFile "ExecutablePerformanceManager.ps1"; .\ExecutablePerformanceManager.ps1
+```
+
+or Download `ExecutablePerformanceManager.ps1`, then **right-click** it → **Run with PowerShell**
 
 > [!CAUTION]
 > If PowerShell scripts are blocked on your system, enable execution first:
-> ```powershell
-> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-> ```
-> `RemoteSigned` is sufficient for local scripts — `Unrestricted` is not required.
-> Or use **[EnablePowerShellScript](https://github.com/insovs/EnablePowerShellScript)** for a one-click solution.
+> Use **[EnablePowerShellScript](https://github.com/insovs/EnablePowerShellScript)** for a one-click solution.
 
 ---
 
