@@ -13,29 +13,6 @@ A lightweight PowerShell/WPF tool that **applies Windows performance tweaks to a
 
 ---
 
-<details>
-<summary><b>👁️ Show Preview Tool</b></summary>
-<br>
-
-<table>
-<tr>
-<td align="center" width="50%">
- <img width="529" height="633" alt="image" src="https://github.com/user-attachments/assets/823f3560-8a56-4585-9e10-4c95d66e0b77" />
-<br/><br/>
-<sub><b>Splash Screen</b> — Choose a module and get started instantly.</sub>
-</td>
-<td align="center" width="50%">
- <img width="565" height="669" alt="image" src="https://github.com/user-attachments/assets/59cf7a79-cd58-43b8-9e73-da7400f599cf" />
-<br/><br/>
-<sub><b>Main Window</b> — Manage your rules, add apps, and track changes in real time.</sub>
-</td>
-</tr>
-</table>
-
-</details>
-
----
-
 ## ✨ Features
 
 | Feature | What it does |
