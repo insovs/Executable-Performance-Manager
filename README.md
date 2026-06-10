@@ -1,5 +1,8 @@
 <div align="center">
+  
 A lightweight PowerShell/WPF tool that **applies Windows performance tweaks to any executable** in a few clicks.
+
+---
   
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-blue?logo=powershell)
 [![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D4?style=flat-square&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
