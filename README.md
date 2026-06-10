@@ -5,9 +5,8 @@ A lightweight PowerShell/WPF tool that **applies Windows performance tweaks to a
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-blue?logo=powershell)
 [![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D4?style=flat-square&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
 [![Discord](https://img.shields.io/badge/Support-Discord-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/fayeECjdtb)
-[![Preview](https://img.shields.io/badge/Video-Preview-FF0000?logo=youtube&logoColor=white)](https://youtu.be/00VQaXn8sWU)
+[![Preview](https://img.shields.io/badge/Video-Preview-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=00VQaXn8sWU)
 
-https://youtu.be/00VQaXn8sWU
 ---
   
 <img src="https://github.com/user-attachments/assets/c70c178f-d975-4a4f-b19e-33c090ec6f9f" alt="GIF" width="1080">
