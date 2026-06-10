@@ -17,7 +17,7 @@ A lightweight PowerShell/WPF tool that **applies Windows performance tweaks to a
 
 | Feature | What it does |
 |---|---|
-| **CPU Priority** | Forces the process to **High** CPU and I/O priority via IFEO (`PerfOptions`) automatically at launch.<br><br>• **Impact:** Eliminates manual Task Manager steps.<br>• **Result:** Windows prioritizes the executable for CPU time and disk access over background tasks. |
+| **CPU Priority** | Forces the process to **High** CPU and I/O priority via IFEO (`PerfOptions`) automatically at launch.<br><br>• **Result:** Windows prioritizes the executable for CPU time and disk access over background tasks. |
 | **QoS Network** | Tags outgoing network packets with **DSCP 46** (Expedited Forwarding) via Windows QoS policy.<br><br>• **Impact:** Compatible routers prioritize these packets ahead of standard traffic.<br>• **Result:** Reduces ping spikes and jitter. *(Note: Most effective on local networks, as ISPs usually strip WAN tags).* |
 | **GPU Preference** | Forces Windows to always utilize the **discrete GPU** (`GpuPreference=2`) instead of the integrated graphics.<br><br>• **Impact:** Prevents incorrect, silent GPU selection.<br>• **Result:** Essential for hybrid laptops to ensure maximum framerates and full VRAM availability. |
 | **Run As Admin** | Configures the executable to automatically request **administrator privileges** at launch via `AppCompatFlags` + IFEO.<br><br>• **Impact:** Removes the need to manually right-click and "Run as administrator".<br>• **Result:** Prevents applications from failing silently due to restricted permissions. |
