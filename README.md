@@ -1,7 +1,7 @@
 <div align="center">
 
 <img width="1983" height="793" alt="Exectuable Manager Banner" src="https://github.com/user-attachments/assets/ce47a565-415b-41ed-9c67-236edc6bfd9c" />
-<img width="1280" height="1920" alt="gif" src="https://github.com/user-attachments/assets/877cbd89-e466-40a8-ae2f-3ecb0cca6d37" />
+<img width="1280" height="700" alt="gif" src="https://github.com/user-attachments/assets/877cbd89-e466-40a8-ae2f-3ecb0cca6d37" />
 
 
 
