@@ -2,7 +2,7 @@
 
 <img width="1983" height="793" alt="Exectuable Manager Banner" src="https://github.com/user-attachments/assets/ce47a565-415b-41ed-9c67-236edc6bfd9c" />
 
-<img width="1920" height="1080" alt="gif" src="https://github.com/user-attachments/assets/c70c178f-d975-4a4f-b19e-33c090ec6f9f" />
+<img src="https://github.com/user-attachments/assets/c70c178f-d975-4a4f-b19e-33c090ec6f9f" alt="GIF" width="600">
 
 
 A lightweight PowerShell/WPF tool that **applies Windows performance tweaks to any executable** in a few clicks.
