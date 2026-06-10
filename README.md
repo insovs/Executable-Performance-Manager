@@ -19,11 +19,11 @@ A lightweight PowerShell/WPF tool that **applies Windows performance tweaks to a
 |---|---|
 | **CPU Priority** | Forces the process to **High** CPU and I/O priority via IFEO (`PerfOptions`) automatically at launch.<br>• **Result:** Windows prioritizes the executable for CPU time and disk access over background tasks. |
 | **QoS Network** | Tags outgoing network packets with **DSCP 46** (Expedited Forwarding) via Windows QoS policy.<br>• **Result:** Reduces ping, delay, spikes and jitter. |
-| **GPU Preference** | Forces Windows to always utilize the **discrete GPU** (`GpuPreference=2`) instead of the integrated graphics.<br>• **Result:** Essential for hybrid laptops to ensure maximum framerates and full VRAM availability. |
-| **Run As Admin** | Configures the executable to auto request **administrator privileges** at launch via `AppCompatFlags` + IFEO.<br>• **Result:** Prevents applications from failing silently due to restricted permissions. |
 | **Firewall** | Automates the creation of explicit **Inbound and Outbound Allow** rules within the Windows Firewall.<br>• **Result:** Resolves multiplayer issues like rubber-banding, lobby timeouts, and connection drops. |
 | **Defender** | Adds the application's root folder directly to **Windows Defender's exclusion list**.<br>• **Result:** Eliminates hard-to-diagnose micro-stutters and sudden frame time spikes. |
 | **Fullscreen Optimization** | Disables **Windows Fullscreen Optimizations (FSO)** to restore True Exclusive Fullscreen mode.<br>• **Result:** Significantly reduces input latency and improves overall frame pacing. |
+| **GPU Preference** | Forces Windows to always utilize the **discrete GPU** (`GpuPreference=2`) instead of the integrated graphics.<br>• **Result:** Essential for hybrid laptops to ensure maximum framerates and full VRAM availability. |
+| **Run As Admin** | Configures the executable to auto request **administrator privileges** at launch via `AppCompatFlags` + IFEO.<br>• **Result:** Prevents applications from failing silently due to restricted permissions. |
 
 ---
 
